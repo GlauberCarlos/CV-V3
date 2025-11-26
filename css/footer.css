@@ -1,0 +1,48 @@
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 3.75rem 0 2.5rem;
+    /* border: red 1px solid; */
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1px 1.8rem;
+    background-color: #0A2E49;
+    border-radius: 2rem;
+    transition: scale 0.5s;
+    transition: background-color  0.5s;
+}
+
+.download:hover {
+    background-color: #556D86;
+    scale: 1.04;
+}
+
+.download img {
+    height: 1.6rem;
+}
+
+.download p, .download p a {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    color: #f2f2f2;
+}
+
+
+@media (max-width: 1024px){    
+    footer{
+        margin: 3.75rem 0 2.5rem;
+    }
+}
+
+@media (max-width: 768px){   
+    footer{
+        margin: 2.75rem 0 2.5rem;
+    }
+}

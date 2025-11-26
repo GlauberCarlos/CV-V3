@@ -1,0 +1,127 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1.5rem 0 0;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.875rem;
+    letter-spacing: -0.5px;
+    color: #f2f2f2;
+}
+
+.header-links {
+    display: flex;
+    align-items: end;
+    gap: 2.8rem;
+}
+
+.header-links a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.125rem;
+    letter-spacing: 1.5px;
+    color: #f2f2f2;
+    border-bottom: 2px solid transparent;
+    transition: border 0.5s;
+}
+
+.header-links a:hover{
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.burguer {
+    display: none;
+    position: relative;
+}
+
+.burguer-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transform: translateX(0px) rotate(0deg);
+    transition: transform 1s ease;
+}
+
+@media (max-width: 1024px){    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.8rem 2rem 1rem 2rem;
+        align-items: center;
+        background-color: #0A2E49;
+    }
+    .header-links {
+        display: none;
+    }
+    .burguer {
+        display: flex;
+        align-items: center;
+    } 
+    .burguer-menu {
+        position: absolute;
+        top: 4.5rem;
+        right: 0;
+        background: #0A2E49;
+        border-radius: 10px;
+        padding: 1rem 3rem;
+        list-style: none;
+        box-shadow: 2px 2px 10px rgb(0,0,0);
+        border: #556D86 1px solid;
+
+
+        pointer-events: none;
+        opacity: 0;
+        transform: translateX(250px);
+        transition: transform 1s ease, opacity 0.5s ease;
+    }     
+    .burguer-menu li {
+        text-align: center;
+        padding: 1.2rem 0;
+    }
+    .burguer-menu li a {
+        text-decoration: none;
+        color: #f2f2f2;
+        border-bottom: 2px solid transparent;
+        transition: border 0.5s;
+    }
+    .burguer-menu li a:hover {
+        border-bottom: 2px solid #f2f2f2;
+    }  
+    .burguer.open .burguer-menu {
+        opacity: 1;
+        transform: translateX(0px);
+        pointer-events: auto;
+    }    
+
+    .burguer-btn.rotate {
+        transform: translateX(-50px) rotate(90deg);
+    }
+}
+
+@media (max-width: 768px){
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.8rem 2rem 1rem 2rem;
+        align-items: center;
+        background-color: #0A2E49;
+        /* border: red 1px solid; */
+    }
+    .header-links {
+        display: none;
+    }
+    .burguer {
+        display: flex;
+    }
+    
+}

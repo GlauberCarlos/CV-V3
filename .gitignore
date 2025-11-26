@@ -1,0 +1,12 @@
+node_modules/
+
+*.log
+
+.vscode/
+
+*.ini
+
+
+bkp/
+
+fonts/
