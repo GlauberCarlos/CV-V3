@@ -1,6 +1,6 @@
 async function partials() {
-    document.getElementById("header").innerHTML = await (await fetch("partials/header.html")).text();
-    document.getElementById("footer").innerHTML = await (await fetch("partials/footer.html")).text();
+    document.getElementById("header").innerHTML = await (await fetch("../partials/header.html")).text();
+    document.getElementById("footer").innerHTML = await (await fetch("../partials/footer.html")).text();
 
     initMenu();
 }
