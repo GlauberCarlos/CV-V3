@@ -1,0 +1,150 @@
+body {    
+    background: linear-gradient(#0A2E49 500px, transparent 500px), #EEEDE6;   
+}
+
+.hello-text {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* border: #ff0000 1px solid; */
+}
+
+.so {
+    font-weight: 900;
+    font-size: 1.375rem;
+    letter-spacing: 2.5px;
+    margin-top: 5rem;
+    color: #556D86;
+    /* border: #ff0000 1px solid; */
+}
+
+.iDo {    
+    font-weight: 850;
+    font-size: 2.5rem;
+    letter-spacing: 3.5px;
+    color: #0A2E49;
+    margin: 0;
+    /* border: #ff0000 1px solid; */
+}
+
+.iDo-text {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 0;
+    letter-spacing: 0.7px;
+    color: #556D86;
+    /* border: #ff0000 1px solid; */
+}
+
+.other-abilities {
+    font-weight: 850;
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    margin-top: 2.7rem;
+    color: #556D86;
+    /* border: #ff0000 1px solid; */
+}
+
+.hello-icons {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    /* border: #ff0000 1px solid;  */
+}
+
+.icons-top{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    align-items: center;
+    /* border: #ff0000 1px solid;  */
+}
+
+.icons-top img,
+.icons-bottom img  {
+    margin: 0 auto;
+    max-height: 5rem;
+}
+
+.icons-bottom{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 4.7rem;
+    /* border: #ff0000 1px solid;  */
+}
+
+
+@media (max-width: 1024px){
+    .hello {
+        margin: 7rem auto 0;
+    }
+    .so {
+        font-size: 1.2rem;
+    }
+    .iDo {
+        margin: 0.1rem 0 1rem;
+        font-size: 1.8rem;
+        letter-spacing: 3.3px;
+    } 
+    .iDo-text {
+        font-size: 0.9rem;
+    }
+    .hello-icons {
+        margin-right: 1rem;
+    }
+    .icons-top img,
+    .icons-bottom img  {
+        margin: 0 auto 1rem;
+        max-height: 4rem;
+    }
+}
+
+@media (max-width: 768px){    
+    .hello {
+        margin: 7rem auto 0;
+        display: block;        
+    }
+    .hello-text {
+        width: 100%;        
+    }
+    .so {
+        margin-top: 3rem;
+        font-size: 1.2rem;
+    }
+    .iDo {
+        margin: 0.1rem 0 1rem;
+        font-size: 1.5rem;
+        letter-spacing: 3.3px;       
+    } 
+    .iDo-text {
+        font-size: 0.9rem;
+    }
+    .hello-icons {
+        width: 100%;
+        margin: 0;
+        /* border: #ff0000 1px solid; */
+    }
+    .icons-bottom{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+        margin: 1rem 0 1rem;
+        /* border: #ff0000 1px solid;  */
+    }
+    .icons-top img,
+    .icons-bottom img  {
+        margin: 0 auto 1rem;
+        max-height: 4rem;
+        /* border: #ff0000 1px solid; */
+        
+    }
+
+
+}

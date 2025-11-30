@@ -1,0 +1,80 @@
+body {    
+    background: linear-gradient(#0A2E49 500px, transparent 500px), #EEEDE6;   
+}
+.education-img {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: #ff0000 1px solid;  */
+}
+
+#education-tech {
+    width: 85%;
+}
+
+#education-glauber {
+    width: 60%;
+    margin-left: 3rem;
+}
+
+.hello-fullstack {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+    /* border: #ff0000 1px solid;  */
+}
+
+.education-title {
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 3.5px;
+    margin: 1rem 0 4rem;
+    color: #0A2E49;
+    /* border: #ff0000 1px solid; */
+}
+
+.education-text{
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 0.3px;
+    text-align: justify;
+    color: #556D86;
+    /* border: #ff0000 1px solid; */
+}
+
+
+@media (max-width: 1024px){
+    .hello {
+        margin: 7rem auto 0;
+    }    
+    .hello-img img{
+        max-width: 70%;
+    }
+    .abilities {
+        margin: 3rem 0 1rem;
+        font-size: 1.8rem;
+        letter-spacing: 3.3px;
+        /* border: #ff0000 1px solid; */
+    } 
+    .abilities-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px){    
+    .hello {
+        margin: 7rem auto 0;
+        display: block;        
+    }
+    .hello-text {
+        width: 100%;        
+    }
+    .hello-img {
+        width: 100%;        
+    }
+}

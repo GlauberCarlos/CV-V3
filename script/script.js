@@ -25,4 +25,12 @@ function initMenu() {
     });    
 }
 
+const values = document.querySelectorAll(".value")
+const progress = document.querySelectorAll(".progress")
+
+values.forEach((value, index) => {
+    let percent = value.textContent
+    progress[index].style.width = percent;
+})
+
 partials ();

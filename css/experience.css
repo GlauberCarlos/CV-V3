@@ -1,0 +1,116 @@
+body {    
+    background: linear-gradient(#0A2E49 500px, transparent 500px), #EEEDE6;   
+}
+
+.hello {    
+    display: flex;
+    flex-direction: column;
+    /* border: #ff0000 1px solid; */
+}
+
+.my-work-exp {
+    text-align: center;
+    width: 100%;
+    padding: 2rem 13% 0;
+    box-sizing: border-box;
+}
+
+.text-my {
+    font-weight: 900;
+    font-size: 1.1rem;
+    letter-spacing: 2.5px;
+    color: #556D86;
+    /* border: #ff0000 1px solid; */
+}
+
+.text-work-exp {    
+    font-weight: 850;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: #0A2E49;
+    margin: 0;
+    /* border: #ff0000 1px solid; */
+}
+
+.text-description {
+    text-align: justify;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding-top: 1.5rem;
+    letter-spacing: 1px;
+    color: #556D86;
+    /* border: #ff0000 1px solid; */
+}
+
+.experience-end {
+    position: relative;
+    width: 60%;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    margin: 1.5rem auto;
+    padding: 4rem 3rem 1rem;
+}
+
+.experience-end img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    height: 3.5rem;
+}
+
+.experience-end p {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    color: #0A2E49;
+}
+
+@media (max-width: 1024px){
+    .hello {
+        margin: 7rem auto 0;
+    }
+    .my-latest-projects {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .text-my {
+        font-size: 1rem;        
+    }
+    .text-lp {
+        font-size: 1.8rem;
+        letter-spacing: 2.5px;
+    }    
+    .text-description {
+        margin: 0.5rem 0 0;
+    }
+    .see-all {
+        width: 10rem;
+        margin: 2rem auto 0;
+    }
+    .project-blocks {
+        flex-direction: column;        
+        margin: 0 1rem;
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        border-bottom: #556D86 0.2rem solid;
+    }
+    .project:last-child {
+        border-bottom: none;
+    }
+    .project p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){    
+    
+    
+
+}

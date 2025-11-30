@@ -1,0 +1,126 @@
+body {    
+    background: linear-gradient(#0A2E49 500px, transparent 500px), #EEEDE6;   
+}
+.hello-img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: #ff0000 1px solid;  */
+}
+
+.hello-img img{
+    max-width: 50%;
+    border: 8px #EEEDE6 solid;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.hello-text {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    margin-bottom: 5rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* border: #ff0000 1px solid; */
+}
+
+.abilities {
+    font-weight: 900;
+    font-size: 1.8rem;
+    letter-spacing: 3.5px;
+    margin-top: 6rem;
+    color: #0A2E49;
+    /* border: #ff0000 1px solid; */
+}
+
+.abilities-text {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.7px;
+    color: #556D86;
+    /* border: #ff0000 1px solid; */
+}
+
+.progress-box {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.progress-subs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-subs p{
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0.65rem 0 ;
+    letter-spacing: 0.7px;
+    text-transform: capitalize;
+    color: #0A2E49;    
+}
+
+.progress-bar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #EEEDE6;
+    border-radius: 0.25rem;   
+    position: relative; 
+}
+
+.progress {
+    width: 0%;
+    height: inherit;
+    background-color: #556D86;
+    border-radius: inherit;
+    position: relative; 
+}
+
+.progress::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 0.6rem;
+    height: 1.2rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    border: 1px solid #0A2E49;
+}
+
+@media (max-width: 1024px){
+    .hello {
+        margin: 7rem auto 0;
+    }    
+    .hello-img img{
+        max-width: 70%;
+    }
+    .abilities {
+        margin: 3rem 0 1rem;
+        font-size: 1.8rem;
+        letter-spacing: 3.3px;
+        /* border: #ff0000 1px solid; */
+    } 
+    .abilities-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px){    
+    .hello {
+        margin: 7rem auto 0;
+        display: block;        
+    }
+    .hello-text {
+        width: 100%;        
+    }
+    .hello-img {
+        width: 100%;        
+    }
+}

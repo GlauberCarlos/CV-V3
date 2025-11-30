@@ -1,7 +1,7 @@
 footer{
     display: flex;
     justify-content: center;
-    margin: 3.75rem 0 2.5rem;
+    margin: 2rem 0 0;
     /* border: red 1px solid; */
 }
 
@@ -9,12 +9,14 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
     gap: 1rem;
     padding: 1px 1.8rem;
     background-color: #0A2E49;
+    box-shadow: 2px 2px 7px #6d6d6d;
     border-radius: 2rem;
-    transition: scale 0.5s;
-    transition: background-color  0.5s;
+    transition: scale 0.5s ease;
+    transition: background-color 0.5s ease;
 }
 
 .download:hover {
