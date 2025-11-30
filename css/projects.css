@@ -1,7 +1,3 @@
-body {    
-    background: linear-gradient(#0A2E49 500px, transparent 500px), #EEEDE6;   
-}
-
 .hello {    
     display: flex;
     flex-direction: column;

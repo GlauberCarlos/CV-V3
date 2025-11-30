@@ -3,6 +3,7 @@ async function partials() {
     document.getElementById("footer").innerHTML = await (await fetch("../partials/footer.html")).text();
 
     initMenu();
+    document.body.classList.add("ready");
 }
 
 function initMenu() {    
